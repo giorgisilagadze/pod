@@ -1,0 +1,350 @@
+* {
+    margin: 0px;
+    padding: 0px;   
+    font-family: 'Chivo', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #121725;
+    overflow: hidden;
+}
+
+.div-background {
+    width: 100%;
+    height: 100%;
+    padding-top: 62px;
+    margin: auto;
+    max-width: 500px;
+    position: relative;
+}
+
+.div-background::before {
+    content: url(./pod-request-access-landing-page/assets/mobile/image-host.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+    z-index: -99;
+    overflow-y: hidden;
+}
+
+.logo {
+    opacity: 1;
+    margin: auto;
+    display: block;
+}
+
+.tittle {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 38px;
+    text-align: center;
+    margin: 57px auto 0px;
+    max-width: 400px;
+    color: #54E6AF;
+    text-transform: uppercase;
+}
+
+span {
+    color: white;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin: 16px auto 0px;
+    max-width: 327px;
+    color: #C2CBE5;
+}
+
+.div-apps {
+    width: 315px;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    margin: 34px auto 0px;
+}
+
+.spotify {
+    width: 56px;
+    height: 17px;
+}
+
+.apple {
+    width: 45px;
+    height: 17px;
+}
+
+.google {
+    width: 70px;
+    height: 12px;
+}
+
+.pocket {
+    width: 70px;
+    height: 15px;
+}
+
+.input-1 {
+    width: 295px;
+    height: 46px;
+    border-radius: 28px;
+    margin: 48px auto 0px;
+    display: block;
+    padding-left: 32px;
+    border: none;
+    background-color: #2C344B;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: white;
+}
+
+.input-1:focus {
+    outline: none;
+}
+
+.valid {
+    border: solid 2px green;
+}
+
+.butt-1 {
+    width: 327px;
+    height: 46px;
+    border-radius: 28px;
+    margin: 16px auto 0px;
+    display: block;
+    border: none;
+    background-color: #54E6AF;
+    color: #121725;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: 'Chivo', sans-serif;
+}
+
+.error {
+    width: 263px;
+    margin: 5px auto 0px;
+    color: red;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.logo-tablet {
+    display: none;
+}
+
+.sign-in-2 {
+    display: none;
+}
+
+.dots {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url("./pod-request-access-landing-page/assets/tablet/image-host.jpg");
+        background-repeat: no-repeat;
+        background-position: top -20px right;
+    }
+
+    .div-background {
+        width: 635px;
+        height: 417px;
+        padding-top: 93px;
+        margin: 132px auto 0px;
+        max-width: none;
+        position: none;
+        background-color: #121725;
+    }
+
+    .div-background::before {
+        content: "";
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-tablet {
+        display: block;
+        margin: 50px 0px 0px 32px;
+    }
+
+    .tittle {
+        font-size: 48px;
+        line-height: 56px;
+        text-align: left;
+        margin: 0px auto 0px;
+        max-width: none;
+    }
+
+    .text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: left;
+        margin: 32px 0px 0px 0px;
+        max-width: none;
+        width: 445px;
+        color: #C2CBE5;
+    }
+
+    .sign-in-2 {
+        display: block;
+        margin-top: 40px;
+        position: relative;
+    }
+
+    .input-2 {
+        width: 395px;
+        height: 56px;
+        border-radius: 28px;
+        padding-left: 32px;
+        border: none;
+        background-color: #2C344B;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        color: white;
+        position: absolute;
+    }
+
+    .input-2:focus {
+        outline: none;
+    }
+
+    .butt-2 {
+        position: absolute;
+        width: 162px;
+        height: 46px;
+        top: 5px;
+        bottom: 5px;
+        right: 215px;
+        border-radius: 28px;
+        display: block;
+        border: none;
+        background-color: #54E6AF;
+        color: #121725;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .error-2 {
+        position: absolute;
+        top: 61px;
+        left: 32px;
+        color: red;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        
+    }
+
+    .input-1 {
+        display: none;
+    }
+
+    .butt-1 {
+        display: none;
+    }
+
+    .div-apps {
+        width: 527px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin: 160px 0px 0px 0px;
+    }
+
+    .spotify {
+        width: 100px;
+        height: 29px;
+    }
+    
+    .apple {
+        width: 78px;
+        height: 29px;
+    }
+    
+    .google {
+        width: 126px;
+        height: 20px;
+    }
+    
+    .pocket {
+        width: 126px;
+        height: 26px;
+    }
+
+    .dots {
+        display: block;
+        margin: 150px 0px 0px 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-image: url("./pod-request-access-landing-page/assets/desktop/image-host.jpg");
+        background-repeat: no-repeat;
+        background-position: top 130px right;
+    }
+
+    .logo-tablet {
+        display: block;
+        margin: 102px 0px 0px 165px;
+    }
+
+    .div-background {
+        width: 723px;
+        height: 422px;
+        padding-top: 88px;
+        margin: 132px auto 0px;
+    }
+
+    .tittle {
+        font-size: 52px;
+        line-height: 62px;
+        text-align: left;
+        margin: 0px auto 0px;
+        max-width: none;
+    }
+
+    .text {
+        margin: 24px 0px 0px 0px;
+    }
+
+    .sign-in-2 {
+        display: block;
+        margin-top: 40px;
+        position: relative;
+    }
+
+    .butt-2 {
+        top: 5px;
+        bottom: 5px;
+        left: 260px;
+    }
+
+    .dots {
+        display: block;
+        margin: -80px 0px 0px auto;
+    }
+
+    .butt-2:hover {
+        background-color: #B3FFE2;
+        cursor: pointer;
+    }
+}
